@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Voyage";
+    src: url(voyage-regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #82616d;
+}
+#mtext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 999;
+}
+#mtext h1{
+    font-family: Voyage;
+    font-size: 9vw;
+    font-weight: 100;
+    white-space: nowrap;
+    user-select: none;
+    line-height: 1;
+}
+#mtext h3{
+    font-family: Voyage;
+    font-size: 4vw;
+    font-weight: 100;
+    white-space: nowrap;
+    user-select: none;
+    line-height: 1;
+}
+#left{
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+#nav{
+    display: flex;
+    width: 100%;
+    padding: 50px 60px;
+    gap: 100px;
+    color: #fff;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+}
+#left #centerimg{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    background-image: url(freestocks-8a95EVm0ovQ-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#centerimg #text{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    color: #fff;
+}
+#text .part1{
+    width: 30%;
+}
+.part1 h5{
+    margin-bottom: 20px;
+}
+
+#text .part2{
+    width: 70%;
+
+}
+.part2 p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+#scroll{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 30px;
+    transform-origin: 0% 50% ;
+    transform: rotate(-90deg);
+    gap: 10px;
+    bottom: -15px;
+}
+#scrolltext{
+    color: #fff;
+    letter-spacing: 4px;
+}
+#scroll #line{
+    /* position: absolute; */
+    width: 130px;
+    height: 1.6px;
+    background-color: #fff;
+}
+#center{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    background-image: url(freestocks-9UVmlIb0wJU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#card{
+    display: flex;
+    position: absolute;
+    width: 27%;
+    height: 15%;
+    right: -10%;
+    bottom: 10%;
+    background-color: red;
+}
+#cicon{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+#cimg{
+    width: 80%;
+    height: 100%;
+    background-image: url(ivan-jevtic-FD5CR1RDRIc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#right{
+    width: 10%;
+    height: 70%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#ricon {
+    padding: 40px 70px;
+}
+#rlinks{
+    display: flex;
+    gap: 20px;
+    transform: translateY(-150px) rotate(90deg)
+}
+#rlinks a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* @media (min-width: 768px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #left,
+    #center {
+        width: 100%;
+    }
+
+    #left #nav {
+        padding: 20px 30px;
+        gap: 20px;
+    }
+
+    #left #centerimg {
+        width: 100%;
+        height: 50%;
+    }
+
+    #text .part1,
+    #text .part2 {
+        width: 100%;
+    }
+
+    #right {
+        width: 100%;
+        height: auto;
+    }
+
+    #ricon {
+        padding: 20px 30px;
+    }
+
+    #rlinks {
+        transform: translateY(0) rotate(0);
+    }
+} */
